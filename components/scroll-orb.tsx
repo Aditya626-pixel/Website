@@ -53,7 +53,7 @@ function Orb() {
     <Float speed={1.2} rotationIntensity={0.2} floatIntensity={0.6}>
       <group ref={group}>
         {/* Solid distorting core — bright light blue */}
-        <Icosahedron ref={inner} args={[1.1, 6]}>
+        <Icosahedron ref={inner} args={[0.7, 6]}>
           <MeshDistortMaterial
             color="#bfe4ff"
             emissive="#7cc4ff"
@@ -66,12 +66,12 @@ function Orb() {
         </Icosahedron>
 
         {/* Wireframe shell — soft dark lines */}
-        <Icosahedron ref={wire} args={[1.45, 1]}>
+        <Icosahedron ref={wire} args={[0.92, 1]}>
           <meshBasicMaterial color="#2a2a2a" wireframe transparent opacity={0.35} />
         </Icosahedron>
 
         {/* Outer faint shell — soft dark lines */}
-        <Icosahedron args={[1.85, 0]}>
+        <Icosahedron args={[1.18, 0]}>
           <meshBasicMaterial color="#2a2a2a" wireframe transparent opacity={0.16} />
         </Icosahedron>
       </group>
